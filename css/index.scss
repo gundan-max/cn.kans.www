@@ -76,7 +76,7 @@ body {
 
 
 
-    /* 业务代码在这里 */
+    //   轮播图
     .content {
         position: relative;
         width: 1920px;
@@ -129,6 +129,7 @@ body {
 
     }
 
+    // 列表
     .list {
 
         height: 650px;
@@ -139,7 +140,7 @@ body {
             // position: relative;
             width: 1112px;
             height: 544px;
-            margin: 100px auto;
+            // margin: 100px auto;
 
             li {
                 display: inline-block;
@@ -160,6 +161,8 @@ body {
         }
     }
 
+
+    // 底部
     .footer {
         position: relative;
         width: 100%;
@@ -169,19 +172,45 @@ body {
         ul {
             width: 750px;
             height: 60px;
-            margin-left: 97px;
-            margin-top: 60px;
+
 
             li {
                 float: left;
                 width: 25%;
+                // margin-left: 97px;
+                margin-top: 60px;
 
+                span {
+                    color: #fff;
+
+                }
 
                 img {
                     width: 60px;
                     height: 60px;
                 }
             }
+        }
+
+        .one {
+            position: absolute;
+            color: #fff;
+            left: 0;
+            top: 170px;
+        }
+
+        .one {
+            position: absolute;
+            color: #fff;
+            left: 0;
+            top: 20px;
+        }
+
+        .one {
+            position: absolute;
+            color: #fff;
+            left: 0;
+            top: 20px;
         }
 
         .special {

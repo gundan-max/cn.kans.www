@@ -3,7 +3,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* 业务代码在这里 */
 }
 
 html .header,
@@ -143,7 +142,6 @@ html .list ul,
 body .list ul {
   width: 1112px;
   height: 544px;
-  margin: 100px auto;
 }
 
 html .list ul li,
@@ -178,20 +176,48 @@ html .footer ul,
 body .footer ul {
   width: 750px;
   height: 60px;
-  margin-left: 97px;
-  margin-top: 60px;
 }
 
 html .footer ul li,
 body .footer ul li {
   float: left;
   width: 25%;
+  margin-top: 60px;
+}
+
+html .footer ul li span,
+body .footer ul li span {
+  color: #fff;
 }
 
 html .footer ul li img,
 body .footer ul li img {
   width: 60px;
   height: 60px;
+}
+
+html .footer .one,
+body .footer .one {
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 170px;
+}
+
+html .footer .one,
+body .footer .one {
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 20px;
+}
+
+html .footer .one,
+body .footer .one {
+  position: absolute;
+  color: #fff;
+  left: 0;
+  top: 20px;
 }
 
 html .footer .special,
