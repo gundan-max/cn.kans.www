@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html,
 body {
   margin: 0;
@@ -10,6 +9,7 @@ body .header {
   position: relative;
   height: 57px;
   width: 100%;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 html .header ul,
@@ -73,106 +73,125 @@ body .header .input .iconfont {
   margin-left: 10px;
 }
 
-html .content,
-body .content {
+html .banner,
+body .banner {
+  width: 100%;
+  margin-left: 50px;
+}
+
+html .banner .top,
+body .banner .top {
+  width: 100%;
+  height: 90px;
+}
+
+html .banner .top span,
+body .banner .top span {
+  font-size: 15px;
+  line-height: 90px;
+}
+
+html .banner .top span:first-child,
+body .banner .top span:first-child {
+  color: #aeaeae;
+}
+
+html .banner .bottom,
+body .banner .bottom {
   position: relative;
-  width: 1903px;
-  height: 900px;
-  overflow: hidden;
+  width: 100%;
+  height: 500px;
 }
 
-html .content ul,
-body .content ul {
-  /* 为了让ul进行移动的 */
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 900px;
-  width: calc(1903px *5);
-}
-
-html .content ul li,
-body .content ul li {
+html .banner .bottom img,
+body .banner .bottom img {
   float: left;
+  width: 457px;
+  height: 500px;
 }
 
-html .content .prev,
-body .content .prev {
+html .banner .bottom h1,
+body .banner .bottom h1 {
+  float: left;
+  font-size: 46px;
+  margin-top: 122px;
+  margin-left: 50px;
+}
+
+html .banner .bottom .yi,
+body .banner .bottom .yi {
   position: absolute;
-  top: 50%;
-  left: 15px;
-  margin-top: -16px;
-  width: 40px;
+  top: 196px;
+  left: 507px;
+  font-size: 17px;
+}
+
+html .banner .bottom .er,
+body .banner .bottom .er {
+  position: absolute;
+  top: 315px;
+  left: 507px;
+  font-size: 17px;
+}
+
+html .banner .bottom p,
+body .banner .bottom p {
+  position: absolute;
+  top: 353px;
+  left: 507px;
+  font-size: 17px;
+  width: 250px;
   height: 40px;
-  z-index: 10;
-  font-size: 20px;
-  background-color: #e4e3db;
-  border-radius: 50%;
+  border: 2px solid #808080;
   text-align: center;
   line-height: 40px;
-  color: #fff;
-  cursor: pointer;
 }
 
-html .content .prev:hover,
-body .content .prev:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+html .banner .bottom h2,
+body .banner .bottom h2 {
+  float: left;
+  margin-top: 217px;
+  margin-left: -506px;
+  font-size: 18px;
+  line-height: 36px;
 }
 
-html .content .next,
-body .content .next {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  margin-top: -16px;
-  width: 40px;
-  height: 40px;
-  z-index: 10;
-  font-size: 20px;
-  background-color: #e4e3db;
-  border-radius: 50%;
+html .tab,
+body .tab {
+  width: 100%;
+}
+
+html .tab .top,
+body .tab .top {
+  width: 100%;
+  height: 43px;
+}
+
+html .tab .top li,
+body .tab .top li {
+  width: 403px;
+  float: left;
+  height: 43px;
+  border: 1px solid #ccc;
   text-align: center;
-  line-height: 40px;
+  line-height: 43px;
+  font-size: 16px;
+  color: #ccd6e3;
+  margin-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html .tab .top li:first-child,
+body .tab .top li:first-child {
   color: #fff;
-  cursor: pointer;
+  background-color: #ac1212;
+  border: none;
 }
 
-html .content .next:hover,
-body .content .next:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-html .list,
-body .list {
-  height: 585px;
-  width: 100%;
-  background-color: #ccc;
-}
-
-html .list ul,
-body .list ul {
-  width: 1112px;
-  height: 544px;
-}
-
-html .list ul li,
-body .list ul li {
-  display: inline-block;
-  width: 255px;
-  height: 255px;
-  padding: 10px 10px;
-}
-
-html .list ul li:nth-child(-n+5),
-body .list ul li:nth-child(-n+5) {
-  margin-top: 10px;
-}
-
-html .list ul li img,
-body .list ul li img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+html .tab .top li:last-child,
+body .tab .top li:last-child {
+  margin-right: 0;
 }
 
 html .footer,
@@ -254,4 +273,4 @@ body .footer .special {
   right: 85px;
   top: 120px;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=lunbotu01.css.map */

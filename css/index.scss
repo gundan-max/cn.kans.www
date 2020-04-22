@@ -4,6 +4,7 @@ body {
     padding: 0;
 
     .header {
+        // position: fixed;
         position: relative;
         height: 57px;
         width: 100%;
@@ -46,6 +47,7 @@ body {
             right: 123px;
             // width: 250px;
 
+
             input {
                 position: relative;
                 background-color: #bf0017;
@@ -74,16 +76,12 @@ body {
     }
 
 
-
-
     //   轮播图
     .content {
         position: relative;
-        width: 1920px;
+        width: 1903px;
         height: 900px;
-        margin: 100px auto;
         overflow: hidden;
-        top: -100px;
 
         ul {
             /* 为了让ul进行移动的 */
@@ -91,56 +89,125 @@ body {
             left: 0;
             top: 0;
             height: 900px;
-            width: calc(1920px *5);
+            width: calc(1903px *5);
         }
 
         ul li {
             float: left;
         }
 
-        a {
-            display: block;
-        }
-
-        /* previous前
-                 next后
-              */
-        .prev,
-        .next {
-            display: none;
+        .prev {
             position: absolute;
             top: 50%;
+            left: 15px;
             margin-top: -16px;
-            width: 22px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
             z-index: 10;
-        }
+            font-size: 20px;
+            background-color: #e4e3db;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            cursor: pointer;
 
-        .prev {
-            left: 0;
-            background-image: url("../images/arrow-next.png");
+            &:hover {
+                background-color: rgba(0, 0, 0, .3);
+            }
         }
 
         .next {
-            right: 0;
-            background-image: url("../images/arrow-next.png");
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            margin-top: -16px;
+            width: 40px;
+            height: 40px;
+            z-index: 10;
+            font-size: 20px;
+            background-color: #e4e3db;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .3);
+            }
         }
-
-
     }
+
+    // .content {
+    //     width: 1903px;
+    //     height: 900px;
+    //     padding: 7px;
+    //     border: 1px solid #ccc;
+    //     margin: 100px auto;
+    //     position: relative;
+    // }
+
+    // .screen {
+    //     width: 1903px;
+    //     height: 900px;
+    //     overflow: hidden;
+    //     position: relative;
+    // }
+
+    // .screen li {
+    //     width: 1903px;
+    //     height: 900px;
+    //     overflow: hidden;
+    //     float: left;
+    // }
+
+    // .screen ul {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0px;
+    //     width: calc(1903*5);
+    // }
+
+    // #arr {
+    //     display: none;
+    // }
+
+    // #arr span {
+    //     width: 40px;
+    //     height: 40px;
+    //     position: absolute;
+    //     left: 5px;
+    //     top: 50%;
+    //     margin-top: -20px;
+    //     background: #000;
+    //     cursor: pointer;
+    //     line-height: 40px;
+    //     text-align: center;
+    //     font-weight: bold;
+    //     font-family: '黑体';
+    //     font-size: 30px;
+    //     color: #fff;
+    //     opacity: 0.3;
+    //     border: 1px solid #fff;
+    // }
+
+    // #arr #right {
+    //     right: 5px;
+    //     left: auto;
+    // }
 
     // 列表
     .list {
-
-        height: 650px;
+        height: 585px;
         width: 100%;
         background-color: #ccc;
 
         ul {
-            // position: relative;
+
             width: 1112px;
             height: 544px;
-            // margin: 100px auto;
+
 
             li {
                 display: inline-block;
@@ -182,7 +249,7 @@ body {
 
                 span {
                     color: #fff;
-
+                    vertical-align: middle
                 }
 
                 img {
@@ -199,18 +266,32 @@ body {
             top: 170px;
         }
 
-        .one {
+        .two {
             position: absolute;
             color: #fff;
             left: 0;
-            top: 20px;
+            top: 186px;
         }
 
-        .one {
+        .three {
             position: absolute;
             color: #fff;
             left: 0;
-            top: 20px;
+            top: 204px;
+        }
+
+        .s {
+            position: absolute;
+            color: #fff;
+            left: 0;
+            top: 250px;
+        }
+
+        .c {
+            position: absolute;
+            color: #fff;
+            left: 70px;
+            top: 250px;
         }
 
         .special {

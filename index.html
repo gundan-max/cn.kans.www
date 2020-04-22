@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title data-vue-meta="true">韩束官方网站</title>
+    <meta data-vue-meta="true" name="Description"
+        content="韩束,上美集团旗下知名化妆品品牌,拥有日本中国双实验室,致力于将生物技术运用于化妆品研究,从原料,配方,功效实证,消费者感受的各方面,打造高品质实证功效得到产品">
+    <meta data-vue-meta="true" name="keyWords" content="韩束,韩束官网,韩束品牌,韩束高机能系列,韩束官方旗舰">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/reset.css">
 
-    <!-- <script src="./js/index.js"></script> -->
 </head>
 
 <body>
-    <!-- <script src="./lib/jquery-3.4.1.min.js"></script> -->
+
+    <script src="./lib/jquery-3.4.1.min.js"></script>
     <!-- 动画插件 -->
-    <!-- <script src="./js/animate.js"></script> -->
+    <script src="./js/animate.js"></script>
     <!-- 业务代码 -->
     <!-- <script src="./js/index.js"></script> -->
-
+    <script src="./js/index.js"></script>
     <!-- 头部导航 -->
     <div class="header">
         <div class="container">
@@ -40,10 +43,10 @@
                 <li>
                     <span>创新科技</span>
                 </li>
-                <li>
+                <li class="q">
                     <span>关于韩束</span>
-                    <!-- <p>品牌新闻</p>
-                    <p>品牌视频</p> -->
+                    <p style="display: none;">品牌新闻</p>
+                    <p style="display: none;">品牌视频</p>
                 </li>
             </ul>
             <div class="input">
@@ -59,17 +62,14 @@
         <!-- 1.1 列表 -->
         <ul>
             <!-- 1.1.1 图片项 -->
-            <li><a href="javascript:;"><img src="./upload/01-content.jpg" alt=""></a></li>
+            <li><a href="./lunbotu01.html"><img src="./upload/01-content.jpg" alt=""></a></li>
             <li><a href="javascript:;"><img src="./upload/02-content.jpg" alt=""></a></li>
             <li><a href="javascript:;"><img src="./upload/03-content.jpg" alt=""></a></li>
             <li><a href="javascript:;"><img src="./upload/04-content.jpg" alt=""></a></li>
         </ul>
-
         <!-- 左右按钮 -->
-        <i class="prev"></i>
-        <i class="next"></i>
-
-
+        <i class="prev">&lt;</i>
+        <i class="next">&gt;</i>
     </div>
     <!-- 列表项 -->
     <div class="list">
@@ -159,8 +159,8 @@
             <p class="two">中国·上海市中山北路3300号环球港B座22层</p>
             <p class="three">TEL：021-52035555</p>
             <img class="special" src="./images/footer-logo.png" alt="">
-            <a href="">法律声明</a>
-            <a href="">防伪查询</a>
+            <a href="" class="s">法律声明</a>
+            <a href="" class="c">防伪查询</a>
         </div>
     </div>
 </body>
