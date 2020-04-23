@@ -38,6 +38,41 @@ body .header ul li:first-child img {
   height: 18px;
 }
 
+html .header .box,
+body .header .box {
+  width: 100px;
+  height: 120px;
+  background-color: orange;
+  margin-left: 1075px;
+}
+
+html .header .box p,
+body .header .box p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+}
+
+html .header .bigbox,
+body .header .bigbox {
+  width: 1920px;
+  height: 500px;
+  background-color: greenyellow;
+}
+
+html .header .bigbox .one,
+html .header .bigbox .two,
+html .header .bigbox .three,
+html .header .bigbox .four,
+body .header .bigbox .one,
+body .header .bigbox .two,
+body .header .bigbox .three,
+body .header .bigbox .four {
+  display: block;
+  width: 150px;
+  height: 500px;
+}
+
 html .header .input,
 body .header .input {
   position: absolute;
@@ -140,6 +175,71 @@ body .content .next {
 html .content .next:hover,
 body .content .next:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+html .content,
+body .content {
+  width: 1903px;
+  height: 900px;
+  padding: 7px;
+  border: 1px solid #ccc;
+  margin: 100px auto;
+  position: relative;
+}
+
+html .screen,
+body .screen {
+  width: 1903px;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+}
+
+html .screen li,
+body .screen li {
+  width: 1903px;
+  height: 900px;
+  overflow: hidden;
+  float: left;
+}
+
+html .screen ul,
+body .screen ul {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: calc(1903*5);
+}
+
+html #arr,
+body #arr {
+  display: none;
+}
+
+html #arr span,
+body #arr span {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -20px;
+  background: #000;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: '黑体';
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.3;
+  border: 1px solid #fff;
+}
+
+html #arr #right,
+body #arr #right {
+  right: 5px;
+  left: auto;
 }
 
 html .list,

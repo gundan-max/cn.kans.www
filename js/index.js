@@ -1,3 +1,26 @@
+
+$('.about').on('mouseover', function () {
+  $('.box').show()
+})
+$('.about').on('mouseout', function () {
+  $('.box').hide()
+})
+
+$('.cachet').on('mouseover', function () {
+  $('.bigbox').show()
+})
+$('.cachet').on('mouseout', function () {
+  $('.bigbox').hide()
+})
+
+
+
+
+
+
+
+
+// 轮播图
 var $width = $('.screen').width();
 // 定义全局的索引，控制小方块
 var $index = 0;

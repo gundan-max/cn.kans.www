@@ -41,6 +41,35 @@ body {
 
         }
 
+        .box {
+            // margin-left: 20px;
+            width: 100px;
+            height: 120px;
+            background-color: orange;
+            margin-left: 1075px;
+
+            p {
+                font-size: 16px;
+                text-align: center;
+                line-height: 60px;
+            }
+        }
+
+        .bigbox {
+            width: 1920px;
+            height: 500px;
+            background-color: greenyellow;
+
+            .one,
+            .two,
+            .three,
+            .four {
+                display: block;
+                width: 150px;
+                height: 500px;
+            }
+        }
+
         .input {
             position: absolute;
             top: 14px;
@@ -139,63 +168,63 @@ body {
         }
     }
 
-    // .content {
-    //     width: 1903px;
-    //     height: 900px;
-    //     padding: 7px;
-    //     border: 1px solid #ccc;
-    //     margin: 100px auto;
-    //     position: relative;
-    // }
+    .content {
+        width: 1903px;
+        height: 900px;
+        padding: 7px;
+        border: 1px solid #ccc;
+        margin: 100px auto;
+        position: relative;
+    }
 
-    // .screen {
-    //     width: 1903px;
-    //     height: 900px;
-    //     overflow: hidden;
-    //     position: relative;
-    // }
+    .screen {
+        width: 1903px;
+        height: 900px;
+        overflow: hidden;
+        position: relative;
+    }
 
-    // .screen li {
-    //     width: 1903px;
-    //     height: 900px;
-    //     overflow: hidden;
-    //     float: left;
-    // }
+    .screen li {
+        width: 1903px;
+        height: 900px;
+        overflow: hidden;
+        float: left;
+    }
 
-    // .screen ul {
-    //     position: absolute;
-    //     left: 0;
-    //     top: 0px;
-    //     width: calc(1903*5);
-    // }
+    .screen ul {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: calc(1903*5);
+    }
 
-    // #arr {
-    //     display: none;
-    // }
+    #arr {
+        display: none;
+    }
 
-    // #arr span {
-    //     width: 40px;
-    //     height: 40px;
-    //     position: absolute;
-    //     left: 5px;
-    //     top: 50%;
-    //     margin-top: -20px;
-    //     background: #000;
-    //     cursor: pointer;
-    //     line-height: 40px;
-    //     text-align: center;
-    //     font-weight: bold;
-    //     font-family: '黑体';
-    //     font-size: 30px;
-    //     color: #fff;
-    //     opacity: 0.3;
-    //     border: 1px solid #fff;
-    // }
+    #arr span {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        margin-top: -20px;
+        background: #000;
+        cursor: pointer;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        font-family: '黑体';
+        font-size: 30px;
+        color: #fff;
+        opacity: 0.3;
+        border: 1px solid #fff;
+    }
 
-    // #arr #right {
-    //     right: 5px;
-    //     left: auto;
-    // }
+    #arr #right {
+        right: 5px;
+        left: auto;
+    }
 
     // 列表
     .list {
