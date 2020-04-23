@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html,
 body {
   margin: 0;
@@ -8,22 +7,27 @@ body {
 html .header,
 body .header {
   position: relative;
-  height: 57px;
+  height: 45px;
   width: 100%;
 }
 
 html .header ul,
 body .header ul {
-  width: 857px;
-  height: 57px;
+  width: 935px;
+  height: 45px;
 }
 
 html .header ul li,
 body .header ul li {
   display: inline-block;
-  width: 140px;
-  line-height: 57px;
+  width: 153px;
+  line-height: 45px;
   text-align: center;
+}
+
+html .header ul li:hover,
+body .header ul li:hover {
+  border-bottom: 1px solid #bf0017;
 }
 
 html .header ul li span,
@@ -40,10 +44,12 @@ body .header ul li:first-child img {
 
 html .header .box,
 body .header .box {
+  position: relative;
   width: 100px;
   height: 120px;
-  background-color: orange;
-  margin-left: 1075px;
+  background-color: #fff;
+  margin-left: 1145px;
+  z-index: 10;
 }
 
 html .header .box p,
@@ -51,33 +57,224 @@ body .header .box p {
   font-size: 16px;
   text-align: center;
   line-height: 60px;
+  color: #808080;
 }
 
 html .header .bigbox,
 body .header .bigbox {
-  width: 1920px;
-  height: 500px;
-  background-color: greenyellow;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  z-index: 10;
 }
 
 html .header .bigbox .one,
-html .header .bigbox .two,
-html .header .bigbox .three,
-html .header .bigbox .four,
-body .header .bigbox .one,
-body .header .bigbox .two,
-body .header .bigbox .three,
-body .header .bigbox .four {
-  display: block;
-  width: 150px;
+body .header .bigbox .one {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
   height: 500px;
+  top: 60px;
+  left: 495px;
+}
+
+html .header .bigbox .one span,
+body .header .bigbox .one span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .bigbox .one ul > li,
+body .header .bigbox .one ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .bigbox .one ul > li:first-child,
+body .header .bigbox .one ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .bigbox .one ul > li span,
+body .header .bigbox .one ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .bigbox .two,
+body .header .bigbox .two {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 730px;
+}
+
+html .header .bigbox .two span,
+body .header .bigbox .two span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .bigbox .two ul > li,
+body .header .bigbox .two ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .bigbox .two ul > li:first-child,
+body .header .bigbox .two ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .bigbox .two ul > li span,
+body .header .bigbox .two ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .bigbox .three,
+body .header .bigbox .three {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 950px;
+}
+
+html .header .bigbox .three span,
+body .header .bigbox .three span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .bigbox .three ul > li,
+body .header .bigbox .three ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .bigbox .three ul > li:first-child,
+body .header .bigbox .three ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .bigbox .three ul > li span,
+body .header .bigbox .three ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .bigbox .four,
+body .header .bigbox .four {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 1180px;
+}
+
+html .header .bigbox .four span,
+body .header .bigbox .four span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .smallbox,
+body .header .smallbox {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+html .header .smallbox .one,
+body .header .smallbox .one {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 495px;
+}
+
+html .header .smallbox .one span,
+body .header .smallbox .one span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .smallbox .one ul > li,
+body .header .smallbox .one ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .smallbox .one ul > li:first-child,
+body .header .smallbox .one ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .smallbox .one ul > li span,
+body .header .smallbox .one ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .smallbox .two,
+body .header .smallbox .two {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 730px;
+}
+
+html .header .smallbox .two span,
+body .header .smallbox .two span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .smallbox .two ul > li,
+body .header .smallbox .two ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .smallbox .two ul > li:first-child,
+body .header .smallbox .two ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .smallbox .two ul > li span,
+body .header .smallbox .two ul > li span {
+  font-size: 16px;
+  color: #888888;
 }
 
 html .header .input,
 body .header .input {
   position: absolute;
-  top: 14px;
-  right: 123px;
+  top: 5px;
+  right: 50px;
 }
 
 html .header .input input,
@@ -86,8 +283,10 @@ body .header .input input {
   background-color: #bf0017;
   border-radius: 20px;
   border: none;
-  width: 146px;
+  width: 126px;
   height: 30px;
+  color: #fff;
+  padding-left: 20px;
 }
 
 html .header .input #one,
@@ -110,29 +309,37 @@ body .header .input .iconfont {
 
 html .content,
 body .content {
+  width: 1903px;
+  height: 900px;
   position: relative;
+}
+
+html .content .screen,
+body .content .screen {
   width: 1903px;
   height: 900px;
   overflow: hidden;
+  position: relative;
 }
 
-html .content ul,
-body .content ul {
-  /* 为了让ul进行移动的 */
-  position: absolute;
-  left: 0;
-  top: 0;
+html .content .screen li,
+body .content .screen li {
+  width: 1903px;
   height: 900px;
-  width: calc(1903px *5);
-}
-
-html .content ul li,
-body .content ul li {
+  overflow: hidden;
   float: left;
 }
 
-html .content .prev,
-body .content .prev {
+html .content .screen ul,
+body .content .screen ul {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 11418px;
+}
+
+html .content .left,
+body .content .left {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -149,13 +356,13 @@ body .content .prev {
   cursor: pointer;
 }
 
-html .content .prev:hover,
-body .content .prev:hover {
+html .content .left:hover,
+body .content .left:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-html .content .next,
-body .content .next {
+html .content .right,
+body .content .right {
   position: absolute;
   top: 50%;
   right: 15px;
@@ -172,74 +379,9 @@ body .content .next {
   cursor: pointer;
 }
 
-html .content .next:hover,
-body .content .next:hover {
+html .content .right:hover,
+body .content .right:hover {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-html .content,
-body .content {
-  width: 1903px;
-  height: 900px;
-  padding: 7px;
-  border: 1px solid #ccc;
-  margin: 100px auto;
-  position: relative;
-}
-
-html .screen,
-body .screen {
-  width: 1903px;
-  height: 900px;
-  overflow: hidden;
-  position: relative;
-}
-
-html .screen li,
-body .screen li {
-  width: 1903px;
-  height: 900px;
-  overflow: hidden;
-  float: left;
-}
-
-html .screen ul,
-body .screen ul {
-  position: absolute;
-  left: 0;
-  top: 0px;
-  width: calc(1903*5);
-}
-
-html #arr,
-body #arr {
-  display: none;
-}
-
-html #arr span,
-body #arr span {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  margin-top: -20px;
-  background: #000;
-  cursor: pointer;
-  line-height: 40px;
-  text-align: center;
-  font-weight: bold;
-  font-family: '黑体';
-  font-size: 30px;
-  color: #fff;
-  opacity: 0.3;
-  border: 1px solid #fff;
-}
-
-html #arr #right,
-body #arr #right {
-  right: 5px;
-  left: auto;
 }
 
 html .list,
@@ -251,6 +393,7 @@ body .list {
 
 html .list ul,
 body .list ul {
+  margin: auto;
   width: 1112px;
   height: 544px;
 }

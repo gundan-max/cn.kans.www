@@ -1,36 +1,34 @@
-
+// 顶部的导航隐藏显示
+// 关于韩束模块的隐藏显示
 $('.about').on('mouseover', function () {
   $('.box').show()
 })
 $('.about').on('mouseout', function () {
   $('.box').hide()
 })
-
+// 胶囊系列模块的隐藏显示
 $('.cachet').on('mouseover', function () {
   $('.bigbox').show()
 })
 $('.cachet').on('mouseout', function () {
   $('.bigbox').hide()
 })
-
-
-
-
-
-
+// BIO-G系列模块的隐藏显示
+$('.bing').on('mouseover', function () {
+  $('.smallbox').show()
+})
+$('.bing').on('mouseout', function () {
+  $('.smallbox').hide()
+})
 
 
 // 轮播图
+// 获取当前的大盒子的宽度
 var $width = $('.screen').width();
 // 定义全局的索引，控制小方块
 var $index = 0;
 // 定义变量，控制图片的索引
 var $pic = 0;
-
-// 功能1：鼠标移动到box上面的时候显示左右2个箭头
-$('#box').hover(function () {
-  $("#arr").toggle()
-})
 
 // 功能2：克隆第一张图片到ul里面
 $('.screen>ul').append($('.screen>ul>li:first-child').clone(true))
@@ -57,12 +55,12 @@ $('.screen>ol>li').on('mouseenter', function () {
   // 让上面的ul跟着滑动
   $('.screen>ul').stop().animate({
     left: $distance
-  }, 500)
+  }, 1000)
 
 })
 
 // 功能5：点击右箭头，进行下一张切换
-$('#right').on('click', function () {
+$('.right').on('click', function () {
   // 给小圆点的索引++
   $index++;
   // 判断$index是否是5，如果是5，直接就移动到0的位置整个ul
@@ -78,7 +76,7 @@ $('#right').on('click', function () {
   // 让上面的ul跟着滑动
   $('.screen>ul').stop().animate({
     left: $distance
-  }, 500)
+  }, 1000)
 
   // 控制小圆点的索引
   if ($index == $('.screen>ul>li').length - 1) {
@@ -90,7 +88,7 @@ $('#right').on('click', function () {
 })
 
 // 功能6：点击左箭头，进行上一张切换
-$('#left').on('click', function () {
+$('.left').on('click', function () {
   // 小圆点的索引--;
   $index--;
   // 先判断是否是第一张
@@ -107,7 +105,7 @@ $('#left').on('click', function () {
   // 让上面的ul跟着滑动
   $('.screen>ul').stop().animate({
     left: $distance
-  }, 500)
+  }, 1000)
   // 控制小圆点的索引
   if ($index < 0) {
     $index = $('.screen>ol>li').length - 1;
@@ -119,8 +117,8 @@ $('#left').on('click', function () {
 
 // 功能7：开启定时器
 var timer = setInterval(function () {
-  $('#right').click()
-}, 2000)
+  $('.right').click()
+}, 7000)
 
 // 鼠标移动到box的时候关闭定时器，鼠标离开开启定时器
 $('#box').on('mouseenter', function () {
@@ -129,6 +127,9 @@ $('#box').on('mouseenter', function () {
 // 鼠标离开
 $("#box").on('mouseleave', function () {
   timer = setInterval(function () {
-    $('#right').click()
-  }, 2000)
+    $('.right').click()
+  }, 3000)
 })
+
+
+// 列表项

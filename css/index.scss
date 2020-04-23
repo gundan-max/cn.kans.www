@@ -3,33 +3,31 @@ body {
     margin: 0;
     padding: 0;
 
+
+    // 头部
     .header {
         // position: fixed;
         position: relative;
-        height: 57px;
+        height: 45px;
         width: 100%;
 
         ul {
-            width: 857px;
-            height: 57px;
+            width: 935px;
+            height: 45px;
 
             li {
                 display: inline-block;
-                width: 140px;
-                line-height: 57px;
+                width: 153px;
+                line-height: 45px;
                 text-align: center;
 
-
+                &:hover {
+                    border-bottom: 1px solid #bf0017;
+                }
 
                 span {
                     color: #bf0017;
                     font-size: 16px;
-
-                    // &:hover {
-                    //     border-bottom: 1px solid #bf0017;
-
-                    // }
-
                 }
 
                 &:first-child img {
@@ -38,42 +36,222 @@ body {
 
                 }
             }
-
         }
 
         .box {
-            // margin-left: 20px;
+            position: relative;
             width: 100px;
             height: 120px;
-            background-color: orange;
-            margin-left: 1075px;
+            background-color: #fff;
+            margin-left: 1145px;
+            z-index: 10;
 
             p {
                 font-size: 16px;
                 text-align: center;
                 line-height: 60px;
+                color: #808080;
             }
         }
 
         .bigbox {
-            width: 1920px;
-            height: 500px;
-            background-color: greenyellow;
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-color: #fff;
+            z-index: 10;
 
-            .one,
-            .two,
-            .three,
-            .four {
-                display: block;
-                width: 150px;
+            .one {
+                position: absolute;
+                display: inline-block;
+                width: 180px;
                 height: 500px;
+                // margin-left: 470px;
+                top: 60px;
+                left: 495px;
+
+                span {
+                    color: #c71f33;
+                    font-size: 20px;
+                    margin-left: 30px;
+
+                }
+
+                ul>li {
+                    text-align: left;
+                    display: block;
+                    line-height: 36px;
+
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #888888;
+                    }
+                }
+            }
+
+            .two {
+                position: absolute;
+                display: inline-block;
+                width: 180px;
+                height: 500px;
+                // margin-left: 470px;
+                top: 60px;
+                left: 730px;
+
+                span {
+                    color: #c71f33;
+                    font-size: 20px;
+                    margin-left: 30px;
+
+                }
+
+                ul>li {
+                    text-align: left;
+                    display: block;
+                    line-height: 36px;
+
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #888888;
+                    }
+                }
+            }
+
+            .three {
+                position: absolute;
+                display: inline-block;
+                width: 180px;
+                height: 500px;
+                // margin-left: 470px;
+                top: 60px;
+                left: 950px;
+
+                span {
+                    color: #c71f33;
+                    font-size: 20px;
+                    margin-left: 30px;
+
+                }
+
+                ul>li {
+                    text-align: left;
+                    display: block;
+                    line-height: 36px;
+
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #888888;
+                        // display: inline-block;
+                    }
+                }
+            }
+
+            .four {
+                position: absolute;
+                display: inline-block;
+                width: 180px;
+                height: 500px;
+                // margin-left: 470px;
+                top: 60px;
+                left: 1180px;
+
+                span {
+                    color: #c71f33;
+                    font-size: 20px;
+                    margin-left: 30px;
+
+                }
+            }
+        }
+
+        .smallbox {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-color: #fff;
+            z-index: 10;
+
+            .one {
+                position: absolute;
+                display: inline-block;
+                width: 180px;
+                height: 500px;
+                // margin-left: 470px;
+                top: 60px;
+                left: 495px;
+
+                span {
+                    color: #c71f33;
+                    font-size: 20px;
+                    margin-left: 30px;
+
+                }
+
+                ul>li {
+                    text-align: left;
+                    display: block;
+                    line-height: 36px;
+
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #888888;
+                    }
+                }
+            }
+
+            .two {
+                position: absolute;
+                display: inline-block;
+                width: 180px;
+                height: 500px;
+                // margin-left: 470px;
+                top: 60px;
+                left: 730px;
+
+                span {
+                    color: #c71f33;
+                    font-size: 20px;
+                    margin-left: 30px;
+
+                }
+
+                ul>li {
+                    text-align: left;
+                    display: block;
+                    line-height: 36px;
+
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        color: #888888;
+                    }
+                }
             }
         }
 
         .input {
             position: absolute;
-            top: 14px;
-            right: 123px;
+            top: 5px;
+            right: 50px;
             // width: 250px;
 
 
@@ -82,8 +260,10 @@ body {
                 background-color: #bf0017;
                 border-radius: 20px;
                 border: none;
-                width: 146px;
+                width: 126px;
                 height: 30px;
+                color: #fff;
+                padding-left: 20px;
             }
 
             #one {
@@ -106,26 +286,36 @@ body {
 
 
     //   轮播图
+
     .content {
-        position: relative;
         width: 1903px;
         height: 900px;
-        overflow: hidden;
+        position: relative;
 
-        ul {
-            /* 为了让ul进行移动的 */
-            position: absolute;
-            left: 0;
-            top: 0;
+        .screen {
+            width: 1903px;
             height: 900px;
-            width: calc(1903px *5);
+            overflow: hidden;
+            position: relative;
         }
 
-        ul li {
+        .screen li {
+            width: 1903px;
+            height: 900px;
+            overflow: hidden;
             float: left;
         }
 
-        .prev {
+        .screen ul {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 11418px;
+        }
+
+
+
+        .left {
             position: absolute;
             top: 50%;
             left: 15px;
@@ -140,13 +330,13 @@ body {
             line-height: 40px;
             color: #fff;
             cursor: pointer;
-
-            &:hover {
-                background-color: rgba(0, 0, 0, .3);
-            }
         }
 
-        .next {
+        .left:hover {
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .right {
             position: absolute;
             top: 50%;
             right: 15px;
@@ -161,70 +351,13 @@ body {
             line-height: 40px;
             color: #fff;
             cursor: pointer;
+        }
 
-            &:hover {
-                background-color: rgba(0, 0, 0, .3);
-            }
+        .right:hover {
+            background-color: rgba(0, 0, 0, .3);
         }
     }
 
-    .content {
-        width: 1903px;
-        height: 900px;
-        padding: 7px;
-        border: 1px solid #ccc;
-        margin: 100px auto;
-        position: relative;
-    }
-
-    .screen {
-        width: 1903px;
-        height: 900px;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .screen li {
-        width: 1903px;
-        height: 900px;
-        overflow: hidden;
-        float: left;
-    }
-
-    .screen ul {
-        position: absolute;
-        left: 0;
-        top: 0px;
-        width: calc(1903*5);
-    }
-
-    #arr {
-        display: none;
-    }
-
-    #arr span {
-        width: 40px;
-        height: 40px;
-        position: absolute;
-        left: 5px;
-        top: 50%;
-        margin-top: -20px;
-        background: #000;
-        cursor: pointer;
-        line-height: 40px;
-        text-align: center;
-        font-weight: bold;
-        font-family: '黑体';
-        font-size: 30px;
-        color: #fff;
-        opacity: 0.3;
-        border: 1px solid #fff;
-    }
-
-    #arr #right {
-        right: 5px;
-        left: auto;
-    }
 
     // 列表
     .list {
@@ -233,7 +366,7 @@ body {
         background-color: #ccc;
 
         ul {
-
+            margin: auto;
             width: 1112px;
             height: 544px;
 
