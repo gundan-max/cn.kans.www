@@ -133,3 +133,27 @@ $("#box").on('mouseleave', function () {
 
 
 // 列表项
+// $('.list ul li').on('mouseover', function () {
+//   $('.list ul li .up').hide()
+// })
+// $('.list ul li').on('mouseout', function () {
+//   $('.list ul li .up').show()
+// })
+
+
+$(".list>ul>li").mouseenter(function () {
+  //设置当前的li的透明度的同时修改当前的li的所有的兄弟元素li的透明度
+  $('.list>ul>li>.up').css({
+    'display': 'none'
+  })
+  $(this).siblings(".up").css({
+    'display': 'block'
+  });
+});
+//鼠标离开事件
+$(".list>ul>li").mouseleave(function () {
+  //从当前的div中所有的li,设置透明度
+  $(this).find(".up").css({
+    'display': 'block'
+  });
+});

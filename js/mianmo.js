@@ -1,6 +1,7 @@
-$('.tab>.top>li').on('click', function () {
-    // $('.bottom>img').hide()
-    // let index = $(this).index()
-    // $('.bottom>img').eq(index).show()
-    alert('1')
+
+
+$('.tab .top li').on('click', function () {
+    $('.tab .bottom img').hide()
+    let index = $(this).index()
+    $('.tab .bottom img').eq(index).show()
 })
