@@ -7,23 +7,27 @@ body {
 html .header,
 body .header {
   position: relative;
-  height: 57px;
+  height: 45px;
   width: 100%;
-  border-bottom: 1px solid #f3f3f3;
 }
 
 html .header ul,
 body .header ul {
-  width: 857px;
-  height: 57px;
+  width: 935px;
+  height: 45px;
 }
 
 html .header ul li,
 body .header ul li {
   display: inline-block;
-  width: 140px;
-  line-height: 57px;
+  width: 153px;
+  line-height: 45px;
   text-align: center;
+}
+
+html .header ul li:hover,
+body .header ul li:hover {
+  border-bottom: 1px solid #bf0017;
 }
 
 html .header ul li span,
@@ -38,11 +42,239 @@ body .header ul li:first-child img {
   height: 18px;
 }
 
+html .header .box,
+body .header .box {
+  position: relative;
+  width: 100px;
+  height: 120px;
+  background-color: #fff;
+  margin-left: 1145px;
+  z-index: 10;
+}
+
+html .header .box p,
+body .header .box p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 60px;
+  color: #808080;
+}
+
+html .header .bigbox,
+body .header .bigbox {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+html .header .bigbox .one,
+body .header .bigbox .one {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 495px;
+}
+
+html .header .bigbox .one span,
+body .header .bigbox .one span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .bigbox .one ul > li,
+body .header .bigbox .one ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .bigbox .one ul > li:first-child,
+body .header .bigbox .one ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .bigbox .one ul > li span,
+body .header .bigbox .one ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .bigbox .two,
+body .header .bigbox .two {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 730px;
+}
+
+html .header .bigbox .two span,
+body .header .bigbox .two span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .bigbox .two ul > li,
+body .header .bigbox .two ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .bigbox .two ul > li:first-child,
+body .header .bigbox .two ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .bigbox .two ul > li span,
+body .header .bigbox .two ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .bigbox .three,
+body .header .bigbox .three {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 950px;
+}
+
+html .header .bigbox .three span,
+body .header .bigbox .three span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .bigbox .three ul > li,
+body .header .bigbox .three ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .bigbox .three ul > li:first-child,
+body .header .bigbox .three ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .bigbox .three ul > li span,
+body .header .bigbox .three ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .bigbox .four,
+body .header .bigbox .four {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 1180px;
+}
+
+html .header .bigbox .four span,
+body .header .bigbox .four span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .smallbox,
+body .header .smallbox {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+html .header .smallbox .one,
+body .header .smallbox .one {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 495px;
+}
+
+html .header .smallbox .one span,
+body .header .smallbox .one span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .smallbox .one ul > li,
+body .header .smallbox .one ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .smallbox .one ul > li:first-child,
+body .header .smallbox .one ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .smallbox .one ul > li span,
+body .header .smallbox .one ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
+html .header .smallbox .two,
+body .header .smallbox .two {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 500px;
+  top: 60px;
+  left: 730px;
+}
+
+html .header .smallbox .two span,
+body .header .smallbox .two span {
+  color: #c71f33;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+html .header .smallbox .two ul > li,
+body .header .smallbox .two ul > li {
+  text-align: left;
+  display: block;
+  line-height: 36px;
+}
+
+html .header .smallbox .two ul > li:first-child,
+body .header .smallbox .two ul > li:first-child {
+  margin-top: 20px;
+}
+
+html .header .smallbox .two ul > li span,
+body .header .smallbox .two ul > li span {
+  font-size: 16px;
+  color: #888888;
+}
+
 html .header .input,
 body .header .input {
   position: absolute;
-  top: 14px;
-  right: 123px;
+  top: 5px;
+  right: 50px;
 }
 
 html .header .input input,
@@ -51,8 +283,10 @@ body .header .input input {
   background-color: #bf0017;
   border-radius: 20px;
   border: none;
-  width: 146px;
+  width: 126px;
   height: 30px;
+  color: #fff;
+  padding-left: 20px;
 }
 
 html .header .input #one,
