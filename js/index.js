@@ -1,4 +1,4 @@
-// 顶部的导航隐藏显示
+// 顶部的导航
 // 关于韩束模块的隐藏显示
 $('.about').on('mouseover', function () {
   $('.box').show()
