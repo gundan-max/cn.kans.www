@@ -22,7 +22,7 @@ $('.bing').on('mouseout', function () {
 })
 
 
-// 轮播图
+// 中间轮播图
 // 获取当前的大盒子的宽度
 var $width = $('.screen').width();
 // 定义全局的索引，控制小方块
